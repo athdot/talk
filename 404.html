@@ -2,7 +2,8 @@
 <html>
 <body>
 <script>
-var src = window.location.href.split("/")[4];
+var src = window.location.href.split("/");
+  src = src[src.length-1];
 src = src.replace(/-/g, ' ');
 alert(src);
 </script>
